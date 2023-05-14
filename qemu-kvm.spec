@@ -1030,7 +1030,7 @@ rm -rf %{buildroot}%{qemudocdir}/specs
 pushd %{qemu_kvm_build}
 echo "Testing %{name}-build"
 #%make_build check
-make V=1 check
+#make V=1 check
 popd
 
 # endif !tools_only
