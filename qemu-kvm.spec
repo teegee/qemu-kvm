@@ -973,9 +973,6 @@ rm -rf %{buildroot}%{_datadir}/%{name}/QEMU,cgthree.bin
 rm -rf %{buildroot}%{_bindir}/ivshmem-client
 rm -rf %{buildroot}%{_bindir}/ivshmem-server
 
-# Remove efi roms
-rm -rf %{buildroot}%{_datadir}/%{name}/efi*.rom
-
 # Provided by package ipxe
 rm -rf %{buildroot}%{_datadir}/%{name}/pxe*rom
 # Provided by package vgabios
@@ -1121,6 +1118,7 @@ useradd -r -u 107 -g qemu -G kvm -d / -s /sbin/nologin \
 
 %dir %{_datadir}/%{name}/
 %{_datadir}/%{name}/keymaps/
+%{_datadir}/%{name}/efi*.rom
 %{_mandir}/man1/%{name}.1*
 %{_mandir}/man7/qemu-block-drivers.7*
 %attr(4755, -, -) %{_libexecdir}/qemu-bridge-helper
