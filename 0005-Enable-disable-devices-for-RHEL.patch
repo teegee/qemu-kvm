@@ -220,7 +220,7 @@ new file mode 100644
 index 0000000000..668b2d0e18
 --- /dev/null
 +++ b/configs/devices/x86_64-softmmu/x86_64-rh-devices.mak
-@@ -0,0 +1,109 @@
+@@ -0,0 +1,110 @@
 +include ../rh-virtio.mak
 +
 +CONFIG_ACPI=y
@@ -330,6 +330,7 @@ index 0000000000..668b2d0e18
 +CONFIG_VHOST_VSOCK=y
 +CONFIG_VHOST_USER_VSOCK=y
 +CONFIG_VHOST_USER_FS=y
++CONFIG_PCNET_PCI=y
 diff --git a/hw/arm/meson.build b/hw/arm/meson.build
 index b545ba0e4f..a41a16cba7 100644
 --- a/hw/arm/meson.build
