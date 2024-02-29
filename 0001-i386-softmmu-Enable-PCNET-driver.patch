@@ -1,0 +1,25 @@
+From 67f04fe5283e85da471533c6c49c51d5e8d2f51e Mon Sep 17 00:00:00 2001
+From: Rob Kramer <rob@solution-space.com>
+Date: Thu, 29 Feb 2024 11:41:33 +0800
+Subject: [PATCH] i386-softmmu: Enable PCNET driver.
+
+---
+ configs/devices/i386-softmmu/default.mak | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/configs/devices/i386-softmmu/default.mak b/configs/devices/i386-softmmu/default.mak
+index 598c6646df..5eb8e3cae2 100644
+--- a/configs/devices/i386-softmmu/default.mak
++++ b/configs/devices/i386-softmmu/default.mak
+@@ -24,6 +24,8 @@
+ #CONFIG_VTD=n
+ #CONFIG_SGX=n
+ 
++CONFIG_PCNET_PCI=y
++
+ # Boards:
+ #
+ CONFIG_ISAPC=y
+-- 
+2.43.2
+

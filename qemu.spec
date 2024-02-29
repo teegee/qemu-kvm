@@ -378,6 +378,8 @@ Patch0: 0001-pc-bios-optionrom-Fix-pvh.img-ld-build-failure-on-fe.patch
 # https://bugzilla.redhat.com/show_bug.cgi?id=2256884
 Patch1: 0001-include-ui-rect.h-fix-qemu_rect_init-mis-assignment.patch
 
+Patch2: 0001-i386-softmmu-Enable-PCNET-driver.patch
+
 Source10: qemu-guest-agent.service
 Source11: 99-qemu-guest-agent.rules
 Source12: bridge.conf
